@@ -1,0 +1,46 @@
+:root{
+    --background-general: #dcf4fe;
+}
+
+body{
+    background-color: var(--background-general) !important;
+}
+
+.border{
+    
+    border-radius: 50px !important;
+   
+}
+
+.border-rigth{
+    
+    border-radius: 0px 50px 50px 0px !important; 
+}
+
+/* ----------------------------- */
+
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .divider:before,
+  .divider:after {
+    content: "";
+    display: inline-block;
+    width: 40%;
+    border-top: 1px solid #00000056;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .divider:before {
+    right: 5%;
+  }
+  .divider:after {
+    left: 5%;
+  }
+  .divider span {
+    background-color: #fff;
+    padding: 0 10px;
+  }
