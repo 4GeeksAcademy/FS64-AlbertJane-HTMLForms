@@ -19,8 +19,8 @@
             <div class="card-body">
                 <div class="alert alert-danger">Some fields are missing</div>
                 <form action="">
-                    <div class="d-flex flex-row justify-content-between">
-                        <div class="mb-3 flex-grow-1 px-1">
+                    <div class="d-flex flex-md-row justify-content-between flex-sm-column">
+                        <div class="mb-3 flex-grow-1 px-1 ">
                             <label class="fw-bold form-label" for="credit_card">Card # </label>
                             <input type="text" class="form-control form-control-md" name="credit_card" id="credit_card"
                                 placeholder="XXXX-XXXX-XXXX-XXXX">
@@ -39,25 +39,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mb-3 d-flex flex-row justify-content-between">
+                    <div class="mb-3 d-flex flex-md-row justify-content-between">
                         <div class="px-1 flex-grow-1">
                             <label class="fw-bold form-label" for="firstName">First Name</label>
                             <input type="text" class="form-control form-control-md" name="firstName" id="firstName"
                                 placeholder="">
                         </div>
-                        <div class="px-1 flex-grow-1">
+                        <div class="px-1 flex-grow-1 w-50">
                             <label class="fw-bold form-label" for="lastName">Last Name</label>
                             <input type="text" class="form-control form-control-md" name="lastName" id="lastName"
                                 placeholder="">
                         </div>
                     </div>
-                    <div class="mb-3 d-flex flex-row justify-content-between">
+                    <div class="mb-3 d-flex flex-md-row justify-content-between flex-sm-column">
                         <div class="px-1 flex-grow-1">
                             <label class="fw-bold form-label" for="city">City</label>
                             <input type="text" class="form-control form-control-md" name="city" id="city"
                                 placeholder="">
                         </div>
-                        <div class="px-1 d-flex flex-row flex-grow-1">
+                        <div class="px-1 d-flex flex-md-row flex-grow-1 ">
                             <div class="px-1 flex-grow-1">
                                 <label class="fw-bold form-label" for="state">State</label>
                                 <select name="state" id="state" class="form-select form-control form-control-md">
@@ -76,9 +76,74 @@
                             </div>
                         </div>
                     </div>
+                    <label class="fw-bold form-label mt-4" for="cardType">We accept:</label>
+                    <div
+                        class="d-flex flex-md-row mb-3 d-flex flex-sm-column justify-content-between align-items-start">
 
-                </form>
+                        <div class="d-flex flex-row flex-grow-1">
+
+                            <div class="d-flex p-2 bg-secondary">
+                                <div class="input-group mx-1">
+
+                                    <div class="input-group-text">
+
+                                        <input class="form-check-input mt-0" type="radio" name="cardType" value=""
+                                            aria-label="Radio button for following text input">
+                                        <span><img
+                                                src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ftous-logos.com%2Fwp-content%2Fuploads%2F2017%2F04%2FVisa-logo.png&f=1&nofb=1&ipt=83c95ea89fa39143b390b832e944fafb5060e490211fe8cb3f52c663aeb105af&ipo=images"
+                                                alt="" style="height:20px; width:auto;"></span>
+                                    </div>
+
+                                </div>
+                                <div class="input-group mx-1">
+
+                                    <div class="input-group-text">
+                                        <input class="form-check-input mt-0" type="radio" name="cardType" value=""
+                                            aria-label="Radio button for following text input">
+                                        <span><img
+                                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2020%2F09%2FMastercard-Logo-2016-2020.png&f=1&nofb=1&ipt=cd8548948756ee4faa8319bfbfed4ac76260270fa8ee739b3b765fdd8eaa2daa&ipo=images"
+                                                alt="" style="height:20px; width:auto;"></span>
+                                    </div>
+
+                                </div>
+                                <div class="input-group mx-1">
+                                    <div class="input-group-text">
+                                        <input class="form-check-input mt-0" type="radio" name="cardType" value=""
+                                            aria-label="Radio button for following text input">
+                                        <span><img
+                                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcalgary.broadway.com%2Fwp-content%2Fuploads%2Fsites%2F9%2F2019%2F01%2FL_AMEX_Logotype_Stckd_3c_drkBlue_1204x458.png&f=1&nofb=1&ipt=243c28f553ffab190659527f2cea14669fb3f9a239ae08effc3ef9ce078d82bb&ipo=images"
+                                                alt="" style="height:20px; width:auto;"></span>
+                                    </div>
+
+                                </div>
+                                <div class="input-group mx-1">
+                                    <div class="input-group-text">
+                                        <input class="form-check-input mt-0" type="radio" name="cardType" value="wise"
+                                            aria-label="Radio button for following text input">
+                                        <span><img
+                                                src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Wise_Logo_512x124.svg"
+                                                alt="" style="height:20px; width:auto;"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 px-1">
+                            <label class="fw-bold form-label" for="lastName">Message</label>
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <span>Add any notes here.</span>
+
+                        </div>
+                    </div>
+
+
             </div>
+            <div class="card-footer text-body-secondary d-flex justify-content-end gap-2">
+                <button class="btn btn-secondary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+            </form>
         </div>
     </div>
 
