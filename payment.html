@@ -20,17 +20,17 @@
                 <div class="alert alert-danger">Some fields are missing</div>
                 <form action="">
                     <div class="d-flex flex-row justify-content-between">
-                        <div class="mb-3 flex-fill px-5">
+                        <div class="mb-3 flex-grow-1 px-1">
                             <label class="fw-bold form-label" for="credit_card">Card # </label>
                             <input type="text" class="form-control form-control-md" name="credit_card" id="credit_card"
                                 placeholder="XXXX-XXXX-XXXX-XXXX">
                         </div>
-                        <div class="mb-3 flex-fill px-5">
+                        <div class="mb-3  px-1">
                             <label class="fw-bold form-label" for="cvc">CVC # </label>
                             <input type="text" class="form-control form-control-md" name="cvc" id="cvc"
                                 placeholder="0000">
                         </div>
-                        <div class="mb-3 flex-fill px-5">
+                        <div class="mb-3  px-1">
                             <label class="fw-bold form-label" for="amount">Amount</label>
                             <div class="input-group">
                                 <span class="input-group-text">$</span>
@@ -39,6 +39,44 @@
                             </div>
                         </div>
                     </div>
+                    <div class="mb-3 d-flex flex-row justify-content-between">
+                        <div class="px-1 flex-grow-1">
+                            <label class="fw-bold form-label" for="firstName">First Name</label>
+                            <input type="text" class="form-control form-control-md" name="firstName" id="firstName"
+                                placeholder="">
+                        </div>
+                        <div class="px-1 flex-grow-1">
+                            <label class="fw-bold form-label" for="lastName">Last Name</label>
+                            <input type="text" class="form-control form-control-md" name="lastName" id="lastName"
+                                placeholder="">
+                        </div>
+                    </div>
+                    <div class="mb-3 d-flex flex-row justify-content-between">
+                        <div class="px-1 flex-grow-1">
+                            <label class="fw-bold form-label" for="city">City</label>
+                            <input type="text" class="form-control form-control-md" name="city" id="city"
+                                placeholder="">
+                        </div>
+                        <div class="px-1 d-flex flex-row flex-grow-1">
+                            <div class="px-1 flex-grow-1">
+                                <label class="fw-bold form-label" for="state">State</label>
+                                <select name="state" id="state" class="form-select form-control form-control-md">
+
+                                    <option value="pick a state" selected> Pick a State </option>
+                                    <option value="texas">texas</option>
+                                    <option value="california">California</option>
+                                    <option value="florida">Florida</option>
+                                    <option value="ohio">Ohio</option>
+                                </select>
+                            </div>
+                            <div class="px-1 ">
+                                <label class="fw-bold form-label" for="postalCode">Postal Code</label>
+                                <input type="text" class="form-control form-control-md" name="postalCode"
+                                    id="postalCode" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
                 </form>
             </div>
         </div>
