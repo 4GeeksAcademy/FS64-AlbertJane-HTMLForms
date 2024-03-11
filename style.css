@@ -7,7 +7,7 @@ body{
 }
 
 .border{
-    
+    border: 0px !important;
     border-radius: 50px !important;
    
 }
