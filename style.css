@@ -11,7 +11,9 @@ body{
     border-radius: 50px !important;
    
 }
-
+.border-2{
+  border-radius: 50px !important;
+}
 .border-rigth{
     
     border-radius: 0px 50px 50px 0px !important; 

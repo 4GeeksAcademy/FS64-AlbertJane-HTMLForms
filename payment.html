@@ -18,24 +18,24 @@
             </div>
             <div class="card-body">
                 <div class="alert alert-danger">Some fields are missing</div>
-                <form action="">
+                <form action="" id="cardForm">
                     <div class="d-flex flex-md-row justify-content-between flex-sm-column">
                         <div class="mb-3 flex-grow-1 px-1 ">
                             <label class="fw-bold form-label" for="credit_card">Card # </label>
                             <input type="text" class="form-control form-control-md" name="credit_card" id="credit_card"
-                                placeholder="XXXX-XXXX-XXXX-XXXX">
+                                placeholder="XXXX-XXXX-XXXX-XXXX" required>
                         </div>
                         <div class="mb-3  px-1">
                             <label class="fw-bold form-label" for="cvc">CVC # </label>
                             <input type="text" class="form-control form-control-md" name="cvc" id="cvc"
-                                placeholder="0000">
+                                placeholder="0000" required>
                         </div>
                         <div class="mb-3  px-1">
                             <label class="fw-bold form-label" for="amount">Amount</label>
                             <div class="input-group">
                                 <span class="input-group-text">$</span>
                                 <input type="text" class="form-control form-control-md" name="amount" id="amount"
-                                    placeholder="Amount">
+                                    placeholder="Amount" required>
                             </div>
                         </div>
                     </div>
@@ -43,12 +43,12 @@
                         <div class="px-1 flex-grow-1">
                             <label class="fw-bold form-label" for="firstName">First Name</label>
                             <input type="text" class="form-control form-control-md" name="firstName" id="firstName"
-                                placeholder="">
+                                placeholder="" required>
                         </div>
                         <div class="px-1 flex-grow-1 w-50">
                             <label class="fw-bold form-label" for="lastName">Last Name</label>
                             <input type="text" class="form-control form-control-md" name="lastName" id="lastName"
-                                placeholder="">
+                                placeholder="" required>
                         </div>
                     </div>
                     <div class="mb-3 d-flex flex-md-row justify-content-between flex-sm-column">
@@ -141,15 +141,19 @@
             </div>
             <div class="card-footer text-body-secondary d-flex justify-content-end gap-2">
                 <button class="btn btn-secondary">Cancel</button>
-                <button type="submit" class="btn btn-primary">Send</button>
+                <button type="submit" id="submit" class="btn btn-primary">Send</button>
             </div>
             </form>
         </div>
     </div>
 
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
